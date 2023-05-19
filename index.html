@@ -1,27 +1,42 @@
+<html>
+    <title>
+함안 낙화놀이 축제의 이용가치에 관한 설문조사
+    </title>
+    <h1>
+        안녕하십니까? 
+        본 설문조사는 경희대학교 관광학과 관광응용경제론 수업의 일환으로『함안 낙화놀이 축제의 이용가치』를 측정하고자 실시하고 있습니다. 본 설문에는 맞거나 틀리는 내용이 없습니다. 또한, 익명으로 처리되기 때문에 비밀이 절대 보장되며, 응답결과는 오로지 연구목적으로만 사용됩니다. 귀한 시간을 할애해 주셔서 감사합니다.
+
+        2023. 05.
+연 구 자 : 경희대학교 관광학과 학사과정 김유진, 윤보름(xxx1@gmail.com)
+지도교수 : 경희대학교 관광학과 교수 이충기(cklee@khu.ac.kr)
+    </h1>
 <script>
-    // get a random number between 0 and 499
-    //
-    var randNum = Math.floor(Math.random() * 500);
+<!--
+/*
+Random link button- By JavaScript Kit (http://javascriptkit.com)
+Over 300+ free scripts!
+This credit MUST stay intact for use
+*/
 
-    // An array of URL's
-    var randURLs = [
-        "http://naver.com",
-        "http://daum.net",
-        "http://google.com"
-    ];
+//specify random links below. You can have as many as you want
+var randomlinks=new Array()
 
-    // There was a 1 in 500 chance we generated a zero.
-    if (randNum == 0) {
-        // randURLs.length will tell us how many elements are
-        // in the randURLs array - we can use this to generate
-        // a random number between 0 and n (number of elements)
-        //
-        // In our case there are 3 elements in the array, 0, 1
-        // and 2. So we want to get another random number in
-        // the inclusive range 0 - 2
-        //
-        var randURL = Math.floor(Math.random() * randURLs.length);
+randomlinks[0]="http://naver.com"
+randomlinks[1]="http://empas.com"
+randomlinks[2]="http://yahoo.co.kr"
+randomlinks[3]="http://daum.net"
+randomlinks[4]="http://google.co.kr"
 
-        window.open(randURLs[randURL]);
-    }
+function randomlink(){
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
+//-->
 </script>
+<form>
+<p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>
+
+<!--Uncomment below to use a regular text link instead
+<a href="javascript:randomlink()">Random Link</a>
+-->
+    
+</html>
